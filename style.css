@@ -1,0 +1,133 @@
+/* Configuração Geral do Fundo */
+body {
+    background-color: #030302;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Coloca a lista e o formulário lado a lado */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* 1. ESTILO DA LISTA DE EXAMES (Lado Esquerdo) */
+#card {
+    flex: 1; /* Ocupa o espaço da esquerda */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Cria colunas de cards */
+    gap: 20px;
+    max-width: 800px;
+}
+
+/* Estilo do Card que o seu JS cria */
+#card div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-left: 8px solid #333; /* Detalhe lateral escuro */
+    text-align: left; /* Alinha o texto dentro do card */
+}
+
+#card div h3 {
+    margin-top: 0;
+    color: #05b6fc;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+#card div p {
+    margin: 8px 0;
+    color: #444;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* 2. ESTILO DO FORMULÁRIO (Lado Direito) */
+#formcadastro {
+    width: 320px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: sticky; /* O formulário fica parado enquanto você rola os cards */
+    top: 20px;
+}
+
+#formcadastro h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tipo, .dataRealizacao, .custoLaboratorial, .pacienteId {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Garante que o input não escape da caixa */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition:  0.3s, transform 0.2s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+}
+.campo-select {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campo-select label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+    font-size: 0.85rem;
+}
+
+#paciente {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#paciente:focus {
+    border-color: #fc9905;
+    box-shadow: 0 0 5px rgba(252, 153, 5, 0.3);
+}

@@ -1,0 +1,106 @@
+/* Configuração Geral */
+body {
+    background-color: #080501;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Coloca lista e formulário lado a lado */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* 1. LISTA DE PACIENTES (Lado Esquerdo) */
+#card {
+    flex: 1; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 20px;
+    max-width: 850px;
+}
+
+/* Estilo do Card do Paciente */
+#card div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-left: 8px solid #0056b3; /* Cor diferente para diferenciar de Exames */
+    text-align: left;
+}
+
+#card div h3 {
+    margin-top: 0;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+#card div p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* 2. FORMULÁRIO DE CADASTRO (Lado Direito) */
+#pacienteCadastro {
+    width: 320px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 20px;
+}
+
+#pacienteCadastro h1 {
+    font-size: 1.6rem;
+    margin-top: 0;
+    color: #fc9905;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilização dos campos */
+.nome, .numeroSUS, .dataNascimento, .telefone {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+    font-size: 0.85rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+}

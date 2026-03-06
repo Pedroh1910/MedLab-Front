@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med Lab</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="card"></div>
+<form  action=""  id="formcadastro">
+    <h1>Med Lab</h1>
+    
+    
+    <div class="tipo">
+        <label for="tipoId">Tipo</label>
+        <input type="text" id="tipo" name="Tipo">
+    </div>
+    <div class="dataRealizacao">
+        <label for="dataRealizacaoId">Data Realização</label>
+        <input type="date" id="dataRealizacao" name="Data Realização">
+    </div>
+    <div class="custoLaboratorial">
+        <label for="custoLaboratorialId">Custo Laboratorial</label>
+        <input type="number" id="custoLaboratorial" name="Custo Laboratorial">
+    </div>
+    <div class="pacienteId">
+        <label for="pacienteIdId">PacienteId</label>
+        <input type="number" id="pacienteId" name="PacienteId">
+    </div>
+    <button type="submit">Cadastrar Exame</button>
+    <div class="campo-select">
+        <label for="paciente">Paciente</label>
+        <select id="paciente" name="paciente" required>
+            <option value="">Selecione o Paciente...</option>
+        </select>
+    </div>
+</form>
+    
+<script src="./script.js"></script>
+</body>
+</html>
