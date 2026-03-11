@@ -97,3 +97,4 @@ async function cadastrarPaciente(event) {
     
     buscarPaciente();
     
+    
